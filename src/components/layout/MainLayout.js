@@ -1,11 +1,11 @@
 import { Button, Layout, Menu } from "antd";
 import React, { useEffect, useState } from "react";
+import { AiOutlineLogout } from "react-icons/ai";
 import { BiMenu, BiX } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
-import { AiOutlineLogout } from "react-icons/ai";
 import { RxDashboard } from "react-icons/rx";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import Logo from "../assets/Icons/Logo.svg";
+import Logo from "../assets/img/logo.png";
 import "./Navbar.css";
 import Topbar from "./Topbar";
 
@@ -27,7 +27,7 @@ const MainLayout = () => {
       label: "Patients",
     },
     {
-      key: "signin",
+      key: "",
       icon: <AiOutlineLogout />,
       label: "Log Out",
     },

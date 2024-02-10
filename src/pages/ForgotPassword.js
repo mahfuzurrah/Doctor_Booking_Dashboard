@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../components/assets/Icons/Logo.svg";
-import Login_img from "../components/assets/Images/Login.png";
+import Login_img from "../components/assets/img/Login.png";
 import LogInputField from "../components/inputField/LogInputField";
 
 function SignIn() {

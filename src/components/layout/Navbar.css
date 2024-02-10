@@ -200,6 +200,7 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
 
   aside.ant-layout-sider.ant-layout-sider-dark.hide_side_navbar {
     left: 0;
+    top: 65px;
     z-index: 9999;
   }
 

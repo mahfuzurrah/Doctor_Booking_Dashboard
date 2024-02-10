@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar, FaUsers } from "react-icons/fa";
-import D1 from "../components/assets/Images/doctor/D1.png";
+import D1 from "../components/assets/img/doctor/D1.png";
 import DoctorCard from "../components/cards/DoctorCard";
 import TimeDateChart from "../components/charts/TimeDateChart";
 import AppointmentTable from "../components/table/AppointmentTable";

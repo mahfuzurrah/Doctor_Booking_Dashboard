@@ -440,7 +440,7 @@ All pages css start
   gap: 24px;
   background: #f3f3ff;
   padding: 24px;
-  height: fit-content;
+  height: 100%;
 }
 
 .white_bg_area {
@@ -640,5 +640,9 @@ All pages css start
 
   .top_doctor_list {
     margin-top: 20px;
+  }
+
+  .dashboard_page .card{
+    height: auto;
   }
 }
