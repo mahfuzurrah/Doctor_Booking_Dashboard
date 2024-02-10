@@ -1,0 +1,219 @@
+.sidebar {
+  position: fixed !important;
+  height: 100vh;
+  overflow: hidden !important;
+}
+
+.side_bar_menu_list {
+  height: 100vh;
+  padding-bottom: 50px;
+  overflow-y: auto;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.ant-menu-item-icon {
+  font-size: 24px !important;
+  color: var(--description-color);
+}
+
+.ant-menu-title-content {
+  color: var(--title-color) !important;
+}
+
+li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected,
+li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected
+  .ant-menu-item-icon {
+  color: var(--white-color) !important;
+}
+
+.sidebar_top {
+  margin-top: 42px;
+  width: 100%;
+}
+
+.ant-layout-sider {
+  min-width: 220px !important;
+  padding: 12px;
+}
+
+.ant-menu {
+  background: transparent !important;
+}
+
+.ant-menu .ant-menu-item {
+  color: var(--description-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.fixed-header {
+  position: sticky !important;
+  top: 0;
+  z-index: 99999;
+  margin-left: 0 !important;
+}
+
+.ant-layout-header {
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+
+.topbar_nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end !important;
+  gap: 30px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.topbar_nav_item .logo {
+  display: none;
+}
+
+.demo-logo-vertical.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.top_nav_list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.topbar_nav_item .user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header_toggle_btn {
+  margin-left: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  min-width: 50px;
+  min-height: 50px;
+  background: #0000001a;
+}
+
+.top_nav_sell_btn {
+  padding: 5px 10px;
+  background: #1a202c;
+  color: var(--description-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: normal;
+  border-radius: 8px;
+  min-width: max-content;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0) a:hover {
+  color: var(--description-color) !important;
+}
+
+.top_nav_sell_btn img {
+  min-width: 10px !important;
+  min-height: 10px !important;
+}
+
+.header_toggle_btn .icons {
+  font-size: 30px !important;
+  color: var(--description-color);
+}
+
+.header_toggle_btn:hover {
+  background: none !important;
+}
+
+.right_nav_item .T_mobile {
+  padding-left: 30px;
+  border-left: 1px solid var(--border-color);
+  line-height: normal;
+}
+
+aside.ant-layout-sider.ant-layout-sider-dark {
+  position: fixed;
+  background: var(--white-color) !important;
+}
+
+li.ant-menu-item {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+li.ant-menu-item.ant-menu-item-active {
+  background: var(--primary-color) !important;
+  color: var(--white-color) !important;
+}
+
+li.ant-menu-item.ant-menu-item-active .ant-menu-item-icon,
+li.ant-menu-item.ant-menu-item-active span {
+  color: var(--title-color);
+}
+
+li.ant-menu-item span {
+  color: var(--white-color);
+}
+
+li.ant-menu-item.ant-menu-item-selected,
+li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
+  /* padding-left: 12px !important; */
+  background: var(--primary-color);
+  color: var(--white-color) !important;
+}
+
+.body_layout {
+  margin-left: 220px;
+}
+
+@media screen and (max-width: 1220px) {
+  .header_toggle_btn {
+    display: block;
+  }
+
+  .body_layout {
+    margin-left: 0;
+  }
+
+  .ant-layout.hide_body_layout.css-byeoj0,
+  .ant-layout.hide_body_layout.css-dev-only-do-not-override-byeoj0 {
+    margin-left: 220px;
+  }
+
+  aside.ant-layout-sider {
+    left: -100%;
+  }
+
+  aside.ant-layout-sider.ant-layout-sider-dark.hide_side_navbar {
+    left: 0;
+    z-index: 9999;
+  }
+
+  .topbar_nav_item .logo {
+    display: block;
+  }
+
+  .topbar_nav_item {
+    justify-content: space-between !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .topbar_nav_item .user p {
+    display: none;
+  }
+}
