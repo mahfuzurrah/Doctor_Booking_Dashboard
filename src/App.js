@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import ForgotPassword from "./pages/ForgotPassword";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import Users from "./pages/Users";
+import Users from "./pages/Patients";
 
 function App() {
   return (

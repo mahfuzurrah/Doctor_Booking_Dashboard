@@ -76,7 +76,7 @@ const data = [
   },
 ];
 
-const UsersTable = () => {
+const AppointmentTable = () => {
   // const [selectedRowKeys, setSelectedRowKeys] = useState([]);
   // const hasSelected = selectedRowKeys.length > 0;
 
@@ -115,4 +115,4 @@ const UsersTable = () => {
   );
 };
 
-export default UsersTable;
+export default AppointmentTable;

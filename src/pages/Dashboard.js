@@ -3,6 +3,7 @@ import { FaUsers } from "react-icons/fa";
 import D1 from "../components/assets/Images/doctor/D1.png";
 import DoctorCard from "../components/cards/DoctorCard";
 import TimeDateChart from "../components/charts/TimeDateChart";
+import AppointmentTable from "../components/table/AppointmentTable";
 
 function Dashboard() {
   const doctors = [
@@ -106,6 +107,18 @@ function Dashboard() {
               {doctors.map((doctor, index) => (
                 <DoctorCard key={index} doctor={doctor} />
               ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row mt-4">
+        <div className="col-lg-8">
+          <div className="top_doctor_list">
+            <div className="header">
+              <h2>Appointment</h2>
+            </div>
+            <div className="appointment_table">
+            <AppointmentTable/>
             </div>
           </div>
         </div>

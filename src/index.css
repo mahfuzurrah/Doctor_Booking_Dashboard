@@ -533,7 +533,7 @@ All pages css start
   margin-bottom: 5px;
 }
 
-.top_doctor_list {
+.top_doctor_list{
   background: var(--white-color);
   box-shadow: 5px 5px 35px #00000019;
   border-radius: 16px;
@@ -542,15 +542,20 @@ All pages css start
   overflow: auto;
 }
 
-.top_doctor_list .doctor_list {
+.appointment_table{
+  background: var(--white-color);
+  box-shadow: 5px 5px 35px #00000019;
+  border-radius: 16px;
   border-top: 1px solid var(--border-color);
 }
 
 .top_doctor_list .header {
-  padding: 16px 20px;
+  padding: 20px 20px;
   position: sticky;
   top: 0;
   background: var(--white-color);
+  z-index: 1;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .top_doctor_list .doctor-card:hover {
