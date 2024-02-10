@@ -555,6 +555,7 @@ All pages css start
 
 .doctor-card p.doc_status {
   text-align: end;
+  font-size: 14px;
 }
 
 .doctor-card:first-child {
@@ -631,7 +632,25 @@ All pages css start
   z-index: 10000 !important;
 }
 
-/* ======================= */
+.status_area .status {
+  padding: 12px 24px;
+  border-radius: 8px;
+  width: 100px !important;
+}
+
+.status_area .status.approved {
+  background: #a3f7df;
+}
+
+.status_area .status.pending {
+  background: #fbebb4;
+}
+
+.status_area .status.canceled {
+  background: #e4a5a6;
+}
+
+/* =============== Responsive CSS ================= */
 
 @media screen and (max-width: 991px) {
   .card {
@@ -642,7 +661,31 @@ All pages css start
     margin-top: 20px;
   }
 
-  .dashboard_page .card{
+  .dashboard_page .card {
     height: auto;
+  }
+
+  .logIn_page {
+    height: 100vh;
+  }
+
+  .logIn_page .login_form {
+    height: 95vh;
+  }
+
+  .logIn_page .login_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logIn_page .form_area {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .doctor-card p.doc_status {
+    display: none !important;
   }
 }

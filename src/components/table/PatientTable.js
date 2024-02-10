@@ -16,7 +16,7 @@ const columns = [
     dataIndex: "File",
   },
   {
-    title: "Status",
+    title: "Action",
     className: "custom_table_action",
     render: () => (
       <PFileUpload />
