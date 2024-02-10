@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
-import Logo from "../components/assets/Icons/Logo.svg";
 import Login_img from "../components/assets/img/Login.png";
 import LogInputField from "../components/inputField/LogInputField";
 import PasswordInput from "../components/inputField/PasswordInput";
@@ -25,9 +24,6 @@ function SignIn() {
         <div className="col-lg-7 col-md-12 col-sm-12">
           <div className="login_form">
             <div className="login_header">
-              <Link to="/">
-                <img src={Logo} alt="Logo" className="logo" />
-              </Link>
               <div className="lang_selector">
                 <p>
                   Don’t have an account? <Link to="/Signup">Sign up!</Link>
