@@ -1,7 +1,6 @@
 import { Table } from "antd";
 import React from "react";
-import { BsThreeDotsVertical } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import PFileUpload from "../modal/PFileUpload"
 
 const columns = [
   {
@@ -13,16 +12,14 @@ const columns = [
     dataIndex: "Number",
   },
   {
-    title: "Time",
-    dataIndex: "Time",
+    title: "Upload File",
+    dataIndex: "File",
   },
   {
     title: "Status",
     className: "custom_table_action",
     render: () => (
-      <Link to="">
-        <BsThreeDotsVertical />
-      </Link>
+      <PFileUpload />
     ),
   },
 ];
@@ -32,35 +29,35 @@ const data = [
     key: "1",
     Neme: "Jonathan Mandell",
     Number: "0123456789",
-    Time: "Feb-10-2024",
+    File: "Feb-10-2024",
   },
   {
     key: "2",
     Neme: "Jonathan Mandell",
     Number: "0123456789",
-    Time: "Feb-10-2024",
+    File: "Feb-10-2024",
   },
   {
     key: "3",
     Neme: "Jonathan Mandell",
     Number: "0123456789",
-    Time: "Feb-10-2024",
+    File: "Feb-10-2024",
   },
   {
     key: "4",
     Neme: "Jonathan Mandell",
     Number: "0123456789",
-    Time: "Feb-10-2024",
+    File: "Feb-10-2024",
   },
   {
     key: "5",
     Neme: "Jonathan Mandell",
     Number: "0123456789",
-    Time: "Feb-10-2024",
+    File: "Feb-10-2024",
   },
 ];
 
-const AppointmentTable = () => {
+const PatientTable = () => {
   return (
     <div className="mt-0">
       <Table
@@ -74,4 +71,4 @@ const AppointmentTable = () => {
   );
 };
 
-export default AppointmentTable;
+export default PatientTable;

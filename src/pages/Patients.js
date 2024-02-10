@@ -1,5 +1,5 @@
 import React from "react";
-import AppointmentTable from "../components/table/AppointmentTable";
+import PatientTable from "../components/table/PatientTable";
 
 function Patients() {
   return (
@@ -8,7 +8,7 @@ function Patients() {
         <h2>Patients(2)</h2>
       </div>
       <div className="table_area mt-2">
-        <AppointmentTable />
+        <PatientTable />
       </div>
     </div>
   );

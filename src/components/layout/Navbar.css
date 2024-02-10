@@ -52,7 +52,7 @@ li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected
 .fixed-header {
   position: sticky !important;
   top: 0;
-  z-index: 99999;
+  z-index: 999;
   margin-left: 0 !important;
 }
 
