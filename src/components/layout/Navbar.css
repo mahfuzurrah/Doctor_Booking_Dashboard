@@ -47,6 +47,10 @@ li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected
   color: var(--description-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  margin-top: 16px;
+}
+.ant-menu .ant-menu-item:first-child {
+  margin-top: 0;
 }
 
 .fixed-header {
@@ -60,86 +64,6 @@ li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected
   background: var(--white-color);
   display: flex;
   align-items: center;
-}
-
-.topbar_nav_item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end !important;
-  gap: 30px;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.topbar_nav_item .logo {
-  display: none;
-}
-
-.demo-logo-vertical.logo {
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.top_nav_list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.topbar_nav_item .user {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.header_toggle_btn {
-  margin-left: 8px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  min-width: 50px;
-  min-height: 50px;
-  background: #0000001a;
-}
-
-.top_nav_sell_btn {
-  padding: 5px 10px;
-  background: #1a202c;
-  color: var(--description-color);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  line-height: normal;
-  border-radius: 8px;
-  min-width: max-content;
-}
-
-:where(.css-dev-only-do-not-override-byeoj0) a:hover {
-  color: var(--description-color) !important;
-}
-
-.top_nav_sell_btn img {
-  min-width: 10px !important;
-  min-height: 10px !important;
-}
-
-.header_toggle_btn .icons {
-  font-size: 30px !important;
-  color: var(--description-color);
-}
-
-.header_toggle_btn:hover {
-  background: none !important;
-}
-
-.right_nav_item .T_mobile {
-  padding-left: 30px;
-  border-left: 1px solid var(--border-color);
-  line-height: normal;
 }
 
 aside.ant-layout-sider.ant-layout-sider-dark {
@@ -180,9 +104,116 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
   margin-left: 220px;
 }
 
-@media screen and (max-width: 1220px) {
+.topbar_item {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar_item .account_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.topbar_item .account_info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.topbar_item .icons {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.toggle_not_info,
+.toggle_account_info {
+  position: relative;
+}
+
+.toggle_not_info .menu_item {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 380px;
+  padding: 10px 10px;
+  background: var(--white-color);
+  box-shadow: 12px 12px 36px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.toggle_account_info .menu_item {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  padding: 10px 16px;
+  width: 250px;
+  background: var(--white-color);
+  box-shadow: 12px 12px 36px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.toggle_account_info .menu_item a {
+  display: flex;
+  align-items: center;
+  color: var(--description-color);
+  line-height: 120%;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+.toggle_account_info .menu_item a:hover {
+  background: #00000021;
+  color: var(--title-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.sm-logo {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-1rqnfsa).ant-btn.ant-btn-icon-only {
+  min-width: 45px;
+  min-height: 45px;
+  background: #00000021;
+  margin-left: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
   .header_toggle_btn {
     display: block;
+  }
+
+  :where(.css-dev-only-do-not-override-1rqnfsa).ant-btn.ant-btn-icon-only {
+    display: block;
+  }
+
+  .demo-logo-vertical .logo {
+    display: none;
+  }
+
+  .sm-logo {
+    display: block;
+    margin-left: 10px;
   }
 
   .body_layout {
@@ -215,6 +246,10 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
 
 @media screen and (max-width: 576px) {
   .topbar_nav_item .user p {
+    display: none;
+  }
+
+  .topbar_item .account_info .name {
     display: none;
   }
 }

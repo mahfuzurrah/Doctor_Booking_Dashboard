@@ -1,6 +1,5 @@
 import { Button, Layout, Menu } from "antd";
 import React, { useEffect, useState } from "react";
-import { AiOutlineLogout } from "react-icons/ai";
 import { BiMenu, BiX } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { RxDashboard } from "react-icons/rx";
@@ -25,12 +24,7 @@ const MainLayout = () => {
       key: "patients",
       icon: <FiUsers />,
       label: "Patients",
-    },
-    {
-      key: "",
-      icon: <AiOutlineLogout />,
-      label: "Log Out",
-    },
+    }
   ];
 
   const [toggleBar, setToggleBar] = useState(false);
