@@ -116,7 +116,8 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
   padding-right: 50px;
 }
 
-.nav_right {
+.nav_right,
+.nav_right .user_area{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -130,8 +131,8 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
 }
 
 .topbar_item .account_info img {
-  width: 30px;
-  height: 30px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 100px;
 }
 
@@ -159,7 +160,7 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
 .toggle_account_info .menu_item {
   position: absolute;
   right: 0;
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 10px 16px;
   width: 250px;
   background: var(--white-color);
