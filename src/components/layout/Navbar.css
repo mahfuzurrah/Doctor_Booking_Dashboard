@@ -191,6 +191,7 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
   display: none;
 }
 
+button.ant-btn.css-1rqnfsa.ant-btn-text.ant-btn-icon-only.header_toggle_btn,
 :where(.css-dev-only-do-not-override-1rqnfsa).ant-btn.ant-btn-icon-only {
   min-width: 45px;
   min-height: 45px;
@@ -204,6 +205,7 @@ li.ant-menu-item.ant-menu-item-selected .ant-menu-title-content {
     display: block;
   }
 
+  button.ant-btn.css-1rqnfsa.ant-btn-text.ant-btn-icon-only.header_toggle_btn,
   :where(.css-dev-only-do-not-override-1rqnfsa).ant-btn.ant-btn-icon-only {
     display: block;
   }
