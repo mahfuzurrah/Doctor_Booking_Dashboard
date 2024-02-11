@@ -38,9 +38,6 @@ function Topbar() {
           <div className="toggle_account_info">
             {isOpen && (
               <div className="menu_item">
-                <Link to="/profile" onClick={handleSignOut}>
-                  Profile
-                </Link>
                 <Link to="/" onClick={handleSignOut}>
                   Sign Out
                 </Link>
